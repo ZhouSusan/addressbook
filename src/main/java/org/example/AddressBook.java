@@ -25,4 +25,10 @@ public class AddressBook {
             entries.remove(deleteThisEntry);
         }
     }
+
+    public void printAllContacts() {
+        for (Entry e : entries) {
+            System.out.println("\n*******\n" + e);
+        }
+    }
 }

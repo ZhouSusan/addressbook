@@ -8,7 +8,7 @@ public class Entry {
     private String email;
 
 
-    public void setLastName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -41,7 +41,7 @@ public class Entry {
     }
 
     public Entry(String name, String address, String phoneNumber, String email) {
-        this.name = name; 
+        this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.email = email;
