@@ -18,13 +18,14 @@ public class AddressBookApp {
             switch (userChoice) {
                 case 1:
                     if (myAddressBook.addressBookSize() < 101) {
-                        System.out.println("New Entry: \nEnter new person's name: ");
+                        System.out.println("New Entry: \nEnter new person's name (lastName, firstname (no spaces)) : ");
                         String name = input.next();
-                        System.out.println("Phone Number:");
+                        System.out.println("Phone Number (***-***-****) no spaces:");
                         String phoneNumber = input.next();
-                        System.out.print("Email: ");
+                        System.out.print("Email (do not enter spaces): ");
                         String email = input.next();
-                        System.out.println("Enter Address: ");
+                        System.out.println("Enter Address (Please uses dashes(-) instead of spaces for the main address. " +
+                                "And use comma to separate the zipCode, State, City, and main address. Please do not add an spaces.): ");
                         String address = input.next();
 
                         myAddressBook.addEntry(new Entry(name,address, phoneNumber, email));
