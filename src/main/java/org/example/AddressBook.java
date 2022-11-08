@@ -9,5 +9,20 @@ public class AddressBook {
         entries.add(e);
     }
 
-    
+    public int addressBookSize() {
+        return entries.size();
+    }
+
+    public void deleteEntry(String thisEntry) {
+        int deleteThisEntry = -1;
+        for (int i = 0; i < entries.size(); i++) {
+            if (entries.get(i).getName().equals(i)) {
+                deleteThisEntry = i;
+            }
+        }
+
+        if (deleteThisEntry >= 0) {
+            entries.remove(deleteThisEntry);
+        }
+    }
 }

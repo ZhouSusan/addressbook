@@ -1,26 +1,19 @@
 package org.example;
 
 public class Entry {
-    private String firstName;
-    private String lastName;
+    private String name;
+
     private String address;
     private String phoneNumber;
     private String email;
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+
+    public void setLastName(String name) {
+        this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
     public void setAddress(String address) {
@@ -47,9 +40,8 @@ public class Entry {
         return email;
     }
 
-    public Entry(String firstName, String lastName, String address, String phoneNumber, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Entry(String name, String address, String phoneNumber, String email) {
+        this.name = name; 
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.email = email;
