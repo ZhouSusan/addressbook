@@ -1,7 +1,6 @@
 package org.example;
 
-public class AddressBook {
+public class AddressBookApp {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
     }
 }

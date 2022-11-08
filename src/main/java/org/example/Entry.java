@@ -12,7 +12,7 @@ public class Entry {
     }
 
     public String getFirstName() {
-        return lastName;
+        return firstName;
     }
 
     public void setLastName(String lastName) {
@@ -38,7 +38,7 @@ public class Entry {
     public String getPhoneNumber() {
         return phoneNumber;
     }
-    
+
     public void setEmail(String email) {
         this.email = email;
     }
