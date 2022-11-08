@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class AddressBookApp {
     public static void displayUserMenu() {
-        System.out.println("Welcome to your personal address book. Please enter : \n1 - Add a new Contact \n2 - Print out all contacts" +
-                "\n3 - Delete a contact \n4 - Total number of contacts so far in your address book \n5 Quit");
+        System.out.println("\nWelcome to your personal address book. Please enter a number 1 - 5.  \n1 - Add a new Contact \n2 - Print out all contacts" +
+                "\n3 - Delete a contact \n4 - Total number of contacts so far in your address book \n5 Quit \nPlease Enter choice here : ");
     }
     public static void main(String[] args) {
 
@@ -20,12 +20,12 @@ public class AddressBookApp {
                     if (myAddressBook.addressBookSize() < 101) {
                         System.out.println("New Entry: \nEnter new person's name: ");
                         String name = input.next();
-                        System.out.println("Enter Address: ");
-                        String address = input.next();
                         System.out.println("Phone Number:");
                         String phoneNumber = input.next();
                         System.out.print("Email: ");
                         String email = input.next();
+                        System.out.println("Enter Address: ");
+                        String address = input.next();
 
                         myAddressBook.addEntry(new Entry(name,address, phoneNumber, email));
                         break;

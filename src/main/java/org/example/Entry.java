@@ -46,4 +46,9 @@ public class Entry {
         this.phoneNumber = phoneNumber;
         this.email = email;
     }
+
+    public String getEntryInfo() {
+        return "\nName: " + this.name + "\nPhone Number : " +  this.phoneNumber
+        + "\nAddress : " + this.address +  "\nEmail : " + this.email;
+    }
 }

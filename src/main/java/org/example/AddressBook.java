@@ -14,21 +14,16 @@ public class AddressBook {
     }
 
     public void deleteEntry(String thisEntry) {
-        int deleteThisEntry = -1;
         for (int i = 0; i < entries.size(); i++) {
-            if (entries.get(i).getName().equals(i)) {
-                deleteThisEntry = i;
+            if (entries.get(i).getName().equals(thisEntry)) {
+                entries.remove(i);;
             }
-        }
-
-        if (deleteThisEntry >= 0) {
-            entries.remove(deleteThisEntry);
         }
     }
 
     public void printAllContacts() {
         for (Entry e : entries) {
-            System.out.println("\n*******\n" + e);
+            System.out.println("\n*******\n" + e.getEntryInfo());
         }
     }
 }
